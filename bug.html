@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    // Incorrect way to access an element that may not exist
+    let myDiv = document.getElementById("myDiv");
+    myDiv.innerHTML = "<p>Added content</p>";
+    let nonExistentElement = document.getElementById("nonExistent");
+    nonExistentElement.innerHTML="<p>This will cause an error</p>"
+  </script>
+</body>
+</html>
